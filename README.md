@@ -12,6 +12,10 @@
 
 Что есть ничто иное как Федеральное государственное унитарное предприятие «Главный радиочастотный центр» - дочка РКН, ответственная за мониторинг и цензурирование рунета https://baj.media/ru/kiberpartizany-rasskazali-kak-v-rossii-sozdayut-botov-kotorye-razmeshchayut-prokremlevskie-3/. Только на phd2 про это не было ни слова, а жаль
 
+Ответ увожаемого CEO сайберока:
+
+![TG](https://github.com/tread-lightly/CyberOK_Skipa_GTFO/blob/main/tg.png)
+
 При наличии у Вас аффилированных с ними и отсутствующих в списке IP адресов, предлагаю репортить их сюда для включения: 
 
 [![telegram:](https://img.shields.io/badge/Telegram-@wladimirwakhrushew-blue)](https://t.me/wladimirwakhrushew)
