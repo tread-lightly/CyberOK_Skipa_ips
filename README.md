@@ -6,7 +6,7 @@
 
 ![NGFW](https://github.com/tread-lightly/CyberOK_Skipa_GTFO/blob/main/NGFW.png)
 
-C идентичным количеством отправляемых пакетов - 12-13:
+C идентичным количеством отправляемых пакетов - 12-13 (1/3 от 36 пакетов на хост, которые они отправляют: https://youtu.be/4wSxp7t6huA?si=O15rvlfQ2J6IWBaD&t=620):
 
 ![PACKETS](https://github.com/tread-lightly/CyberOK_Skipa_GTFO/blob/main/packets.png)
 
