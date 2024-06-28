@@ -6,7 +6,7 @@
 
 ![NGFW](https://github.com/tread-lightly/CyberOK_Skipa_GTFO/blob/main/NGFW.png)
 
-C идентичным количеством отправляемых пакетов - 12-13 - про что как раз было заявлено ими в выступлении на phd2:
+C идентичным количеством отправляемых пакетов - 12-13:
 
 ![PACKETS](https://github.com/tread-lightly/CyberOK_Skipa_GTFO/blob/main/packets.png)
 
