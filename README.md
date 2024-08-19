@@ -1,30 +1,38 @@
-# CyberOK_Skipa_ips
+# CyberOK Skipa ips & something more
 
-Раз [@cyberok-org](https://www.github.com/cyberok-org) отказываются отвечать на просьбы исключения из сканирований, отправляю в паблик список ip адресов для банов на FW
+Раз [@cyberok-org](https://www.github.com/cyberok-org) отказываются отвечать на просьбы исключения из сканирований, сливаю в паблик свой небольшой ресёрч и список аффилированных с ними ip адресов
 
-Одновременно с запуском Zmap с scan-**.skipa.cyberok.ru, VDS/VPS селектела и etc., в логах также начинают появляться интересные сурсы - 212.192.158.0/24, с которых так же запускается Zmap:
+## Про связь с подведами РКН
 
-![NGFW](https://github.com/tread-lightly/CyberOK_Skipa_GTFO/blob/main/NGFW.png)
+Начну с небольшой базы от увожаемого CEO сайберока (TL;DR: правильным является 4 вариант)
 
-C идентичным количеством отправляемых пакетов - 12-13 (1/3 от 36 пакетов на хост, которые они отправляют: https://youtu.be/4wSxp7t6huA?si=O15rvlfQ2J6IWBaD&t=620):
+![TG](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/tg.png)
 
-![PACKETS](https://github.com/tread-lightly/CyberOK_Skipa_GTFO/blob/main/packets.png)
+**Теперь факты:**
 
-С интересным провайдером **FGUP GRCHC**:
+В первом и втором кварталах 2024, одновременно с запуском Zmap с scan-**.skipa.cyberok.ru, VDS/VPS селектела и etc., в логах регулярно светились интересные сурсы - 212.192.158.0/24, с которых так же запускался Zmap:
 
-![LOOKUP](https://github.com/tread-lightly/CyberOK_Skipa_GTFO/blob/main/lookup.png)
+>... protection_name:"ZMap Security Scanner"; protection_type:"IPS"; proxy_src_ip:"212.192.158.168"; ser_agent_kid:"Other: Mozilla/5.0 zgrab/0.x"; service:"443"; ...
+>
+>
+>... protection_name:"ZMap Security Scanner"; protection_type:"IPS"; proxy_src_ip:"77.223.120.227"; ser_agent_kid:"Other: Mozilla/5.0 zgrab/0.x"; service:"80"; ...
 
-Что есть ничто иное как Федеральное государственное унитарное предприятие «Главный радиочастотный центр» - дочка РКН, ответственная за мониторинг и цензурирование рунета https://baj.media/ru/kiberpartizany-rasskazali-kak-v-rossii-sozdayut-botov-kotorye-razmeshchayut-prokremlevskie-3/. Только на phd2 про это не было ни слова, а жаль
+![NGFW](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/NGFW.png)
 
-Ответ увожаемого CEO сайберока:
 
-![TG](https://github.com/tread-lightly/CyberOK_Skipa_GTFO/blob/main/tg.png)
+Количество отправляемых пакетов как хостами скипы, так и хостами из подсети 212.192.158.0/24, идентичное: 12-13 (1/3 от 36 пакетов на хост, которые они высылают: https://youtu.be/4wSxp7t6huA?si=O15rvlfQ2J6IWBaD&t=620 и нет, это не ограничения самого Zmap):
 
-При наличии у Вас аффилированных с ними и отсутствующих в списке IP адресов, предлагаю репортить их сюда для включения: 
+![PACKETS](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/packets.png)
 
-[![telegram:](https://img.shields.io/badge/Telegram-@wladimirwakhrushew-blue)](https://t.me/wladimirwakhrushew)
+Провайдером же подсети 212.192.158.0/24 является **FGUP GRCHC**, что есть ничто иное как Федеральное государственное унитарное предприятие «Главный радиочастотный центр» - дочка РКН, которую не раз связывали с мониторингом и цензурированием рунета https://baj.media/ru/kiberpartizany-rasskazali-kak-v-rossii-sozdayut-botov-kotorye-razmeshchayut-prokremlevskie-3/. Только на phd2 про таких "знакомых" не было ни слова, а жаль:
 
-Наиболее полный перечень активных IP адресов сканеров CYBEROK Skipa на май 2024:
+![LOOKUP](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/lookup.png)
+
+Посмотреть на архивные репорты и периоды активности хостов ГРЧЦ можно на abuseipdb: https://www.abuseipdb.com/check-block/212.192.158.0/24
+
+## Вычисляем по IP
+
+Наиболее полный перечень активных IP адресов сканеров CYBEROK Skipa (обновляется регулярно):
 ```
 185.224.230.0/24
 212.192.158.0/24
@@ -116,7 +124,7 @@ UPD 07.08.2024:
 
 Добавлен ```94.26.228.18``` (scan-06.skipa.cyberok.ru)
 
-UPD 18.08 2024:
+UPD 18.08.2024:
 
 Добавлен ```5.188.159.228```
 (scan-05.skipa.cyberok.ru)
