@@ -6,7 +6,7 @@
 
 Начну с небольшой базы от увожаемого CEO сайберока (TL;DR: правильным является 4 вариант)
 
-![TG](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/tg.png)
+![TG](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/media/tg.png)
 
 **Теперь факты:**
 
@@ -17,16 +17,16 @@
 >
 >... protection_name:"ZMap Security Scanner"; protection_type:"IPS"; proxy_src_ip:"77.223.120.227"; ser_agent_kid:"Other: Mozilla/5.0 zgrab/0.x"; service:"80"; ...
 
-![NGFW](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/NGFW.png)
+![NGFW](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/media/NGFW.png)
 
 
 Количество отправляемых пакетов как хостами скипы, так и хостами из подсети 212.192.158.0/24, идентичное: 12-13 (1/3 от 36 пакетов на хост, которые они высылают: https://youtu.be/4wSxp7t6huA?si=O15rvlfQ2J6IWBaD&t=620 и нет, это не ограничения самого Zmap):
 
-![PACKETS](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/packets.png)
+![PACKETS](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/media/packets.png)
 
 Провайдером же подсети 212.192.158.0/24 является **FGUP GRCHC**, что есть ничто иное как Федеральное государственное унитарное предприятие «Главный радиочастотный центр» - дочка РКН, которую не раз связывали с мониторингом и цензурированием рунета https://baj.media/ru/kiberpartizany-rasskazali-kak-v-rossii-sozdayut-botov-kotorye-razmeshchayut-prokremlevskie-3/. Только на phd2 про таких "знакомых" не было ни слова, а жаль:
 
-![LOOKUP](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/lookup.png)
+![LOOKUP](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/media/lookup.png)
 
 Посмотреть на архивные репорты и периоды активности хостов ГРЧЦ можно на abuseipdb: https://www.abuseipdb.com/check-block/212.192.158.0/24
 
@@ -120,8 +120,8 @@
 178.185.241.114
 176.211.56.130
 176.211.103.178
-92.124.109.218 
-
+92.124.109.218
+85.175.69.50
 ```
 
 UPD 10.06.2024:
@@ -156,9 +156,13 @@ UPD 29.08.2024:
 (Zmap + идентичный характер отправки пакетов + пересечение по времени с хостами Skipa и FGUP GRCHC. Впервые замечены в апреле 2024, а 28.08.2024 с большинства из них снова регистрируется трафик)
 
 
-![PACKETS](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/28082024.png)
+![PACKETS](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/media/28082024.png)
 
 
 UPD 30.08.2024:
 
 Добавлен ```92.124.109.218```
+
+UPD 31.08.2024:
+
+Добавлен ```85.175.69.50```
