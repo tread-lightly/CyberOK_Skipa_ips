@@ -4,7 +4,7 @@
 
 ## Про связь с подведами РКН
 
-Начну с небольшой базы от увожаемого CEO сайберока (TL;DR: правильным является 4 вариант)
+Начну с [небольшой базы](https://t.me/poxek/4149?comment=85901) от увожаемого CEO сайберока (TL;DR: правильным является 4 вариант)
 
 ![TG](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/media/tg.png)
 
