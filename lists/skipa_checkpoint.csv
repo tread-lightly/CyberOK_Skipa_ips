@@ -1,6 +1,7 @@
 #! DESCRIPTION = SKIPA,,,,,,
 #! REFERENCE = Skipa and GRCHC ips,,,,,,
 # Uniq-Name,#Value,#Type,#Confidence,#Severity,#Product,#Comment
+nkcki.5.143.224.x,5.143.224.100-5.143.224.107,IP Range,high,high,AB,NKCKI
 fgup.grchc.185.224.228.x,185.224.228.0-185.224.228.255,IP Range,high,high,AB,FGUP GRCHC
 fgup.grchc.185.224.230.x,185.224.230.0-185.224.230.255,IP Range,high,high,AB,FGUP GRCHC
 fgup.grchc.212.192.158.x,212.192.158.0-212.192.158.255,IP Range,high,high,AB,FGUP GRCHC
