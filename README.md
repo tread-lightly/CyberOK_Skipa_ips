@@ -10,7 +10,7 @@
 
 **Теперь факты:**
 
-В первом и втором кварталах 2024, одновременно с запуском Zmap с scan-**.skipa.cyberok.ru, VDS/VPS селектела и etc., в логах регулярно светились интересные сурсы - 212.192.158.0/24, с которых так же запускался Zmap:
+В первом и втором кварталах 2024, одновременно с запуском Zmap с scan-**.skipa.cyberok.ru, VDS/VPS селектела и etc., в логах начали регулярно светиться интересные сурсы - 212.192.158.0/24, с которых так же запускался Zmap:
 
 >... protection_name:"ZMap Security Scanner"; protection_type:"IPS"; proxy_src_ip:"212.192.158.168"; ser_agent_kid:"Other: Mozilla/5.0 zgrab/0.x"; service:"443"; ...
 >
@@ -19,21 +19,25 @@
 
 ![NGFW](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/media/NGFW.png)
 
-
-Количество отправляемых пакетов как хостами скипы, так и хостами из подсети 212.192.158.0/24, идентичное: 12-13 (1/3 от 36 пакетов на хост, которые они высылают: https://youtu.be/4wSxp7t6huA?si=O15rvlfQ2J6IWBaD&t=620 и нет, это не ограничения самого Zmap):
+Количество отправляемых пакетов как хостами скипы, так и хостами из подсети 212.192.158.0/24, идентичное: 12-13 - 1/3 от 36 пакетов на хост, которые они высылают ([выступление на phd2](https://youtu.be/4wSxp7t6huA?si=O15rvlfQ2J6IWBaD&t=620)) и нет, это не ограничения самого Zmap:
 
 ![PACKETS](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/media/packets.png)
 
-Провайдером же подсети 212.192.158.0/24 является **FGUP GRCHC**, что есть ничто иное как Федеральное государственное унитарное предприятие «Главный радиочастотный центр» - дочка РКН, которую не раз связывали с мониторингом и цензурированием рунета https://baj.media/ru/kiberpartizany-rasskazali-kak-v-rossii-sozdayut-botov-kotorye-razmeshchayut-prokremlevskie-3/. Только на phd2 про таких "знакомых" не было ни слова, а жаль:
+Провайдером же подсети 212.192.158.0/24 является **FGUP GRCHC**, что есть ничто иное как Федеральное государственное унитарное предприятие «Главный радиочастотный центр» - дочка РКН, которую не раз связывали с мониторингом и цензурированием рунета ([источник](https://baj.media/ru/kiberpartizany-rasskazali-kak-v-rossii-sozdayut-botov-kotorye-razmeshchayut-prokremlevskie-3/)). Только на phd про таких "знакомых" не было ни слова, а жаль:
 
 ![LOOKUP](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/media/lookup.png)
 
-Посмотреть на архивные репорты и периоды активности хостов ГРЧЦ можно на abuseipdb: https://www.abuseipdb.com/check-block/212.192.158.0/24
+Посмотреть на архивные репорты и периоды активности хостов ГРЧЦ можно на [abuseipdb](https://www.abuseipdb.com/check-block/212.192.158.0/24)
 
-## Вычисляем по IP
+С политикой active probing сайберока монжо ознакомиться [здесь](https://www.cyberok.ru/policy.html). Очевидно, что запрос на исключение, как и блокировка только хостов scan-xx.skipa.cyberok.ru - это полумеры
+> The moral of the story is: I chose a half-measure when I should have gone all the way. I'll never make that mistake again. No more half-measures, Walter. *(Season 3, Episode 12 of Breaking Bad)*
 
-Наиболее полный перечень активных IP адресов сканеров CYBEROK Skipa (обновляется регулярно, так же доступны ip-листы в 3 разных форматах - https://github.com/tread-lightly/CyberOK_Skipa_ips/tree/main/lists):
+## IP адреса
+
+Наиболее полный перечень активных IP адресов сканеров CYBEROK Skipa, ГРЧЦ и НКЦКИ (обновляется регулярно, помимо него доступны ip-листы в 3 разных форматах: [CIDR](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/lists/skipa_cidr.txt), [Range](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/lists/skipa_range.txt) и [CheckPointCSV](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/lists/skipa_checkpoint.csv)):
 ```
+5.143.224.100/30
+5.143.224.104/30
 185.224.228.0/24
 185.224.230.0/24
 212.192.158.0/24
@@ -207,3 +211,16 @@ UPD 02.09.2024:
 (Анализ репортов с AbuseIPDB + идентичный характер отправки пакетов + типичные провайдеры: sibirtelecom, rostelecom, avangarddsl)
 
 ![3RDPARTY](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/media/3rd_party_ips.png)
+
+UPD 08.09.2024:
+
+Добавлен диапазон ```5.143.224.100-5.143.224.107```. Прямой корреляции со скипой за несколько месяцев найти не удалось (кроме того, что используется Zmap). Немного вводных данных ([источник](https://gist.github.com/v98765/922793b6e5bfe0d9f7dd896337ab6952)):
+
+> Сообщаем Вам, что во исполнение указа Президента РФ № 250 от 1 мая 2022 года и приказа ФСБ России № 213 от 11.05.2023, НКЦКИ на постоянной основе осуществляет сбор технических характеристик и параметров ресурсов сети Интернет принадлежащих участникам ГосСОПКА на предмет выявления угроз информационной безопасности Российской Федерации. Сбор технических характеристик и параметров осуществляется с использованием адресного пространства ПАО «Ростелеком» со следующих IP адресов:
+>
+> 5.143.224.100, 5.143.224.101, 5.143.224.102, 5.143.224.103, 5.143.224.104, 5.143.224.105, 5.143.224.106, 5.143.224.107
+> 
+> Данные  IP-адреса используются только для решения задач НКЦКИ.
+> В связи с тем, что сбор технических характеристик и параметров может фиксироваться средствами обнаружения вторжений как компьютерные воздействия, просим не учитывать воздействия с вышеуказанных IP адресов.
+
+Однако, сканируются не только участники госсопки ([репорты на abuseipdb](https://www.abuseipdb.com/check-block/5.143.224.0/24)). Лукацкий, к слову, тоже [связывал](https://lukatsky.ru/legislation/ot-bumazhnoy-ib-k-prakticheskoy-novyy-prikaz-fsb-po-monitoringu-zaschischennosti.html) этот приказ фсб с балалайкой сайберока ещё в 2023
