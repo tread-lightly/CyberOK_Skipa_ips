@@ -29,7 +29,7 @@
 
 Посмотреть на архивные репорты и периоды активности хостов ГРЧЦ можно на [abuseipdb](https://www.abuseipdb.com/check-block/212.192.158.0/24)
 
-С политикой active probing сайберока монжо ознакомиться [здесь](https://www.cyberok.ru/policy.html). Очевидно, что запрос на исключение, как и блокировка только хостов scan-xx.skipa.cyberok.ru - это полумеры
+С политикой active probing сайберока можно ознакомиться [здесь](https://www.cyberok.ru/policy.html). Очевидно, что запрос на исключение, как и блокировка только хостов scan-xx.skipa.cyberok.ru - это полумеры
 > The moral of the story is: I chose a half-measure when I should have gone all the way. I'll never make that mistake again. No more half-measures, Walter. *(Season 3, Episode 12 of Breaking Bad)*
 
 ## IP адреса
@@ -158,6 +158,8 @@
 95.189.36.106
 80.93.187.17
 5.178.87.167
+5.159.97.203
+188.246.224.80
 ```
 
 UPD 10.06.2024:
@@ -230,3 +232,11 @@ UPD 08.09.2024:
 UPD 09.09.2024:
 
 Добавлены ```80.93.187.17``` (scan-06.skipa.cyberok.ru) и ```5.178.87.167``` (scan-08.skipa.cyberok.ru)
+
+UPD 24.09.2024:
+
+Добавлены ```188.246.224.80``` (scan-107.skipa.cyberok.ru) и ```5.159.97.203``` (Zmap + аналогичный хаарктер отправки пакетов):
+
+![515997203](https://github.com/tread-lightly/CyberOK_Skipa_ips/blob/main/media/515997203.png)
+
+Также сайберкок начал что-то мутить с именами своих хостов - теперь большинство из них имеют номера 100+, а не от 00 до 99, что указано в их "политике ответственного сканирования". Не такое оно уж и ответственное, получается
