@@ -41,6 +41,7 @@
 185.224.228.0/24
 185.224.230.0/24
 212.192.158.0/24
+85.142.100.0/24
 188.68.217.207
 212.41.12.45
 212.41.12.46
@@ -279,3 +280,9 @@ UPD 29.11.2024:
 UPD 04.12.2024:
 
 Добавлен ```85.142.100.2``` (scan-73.skipa.cyberok.ru). Интересный ISP: SCIENTIFIC RESEARCH INSTITUTE FOR SYSTEM ANALYSIS OF THE NATIONAL RESEARCH CENTRE KURCHATOV INSTITUTE 
+
+UPD 07.12.2024:
+
+Добавлены: ```85.142.100.107``` (scan-105.skipa.cyberok.ru), ```85.142.100.106``` (scan-103.skipa.cyberok.ru) ```85.142.100.105``` (scan-102.skipa.cyberok.ru), ```85.142.100.103``` (scan-02.skipa.cyberok.ru), ```85.142.100.3``` (scan-70.skipa.cyberok.ru), ```85.142.100.5``` (scan-72.skipa.cyberok.ru)
+
+Предлагаю банить всю подсеть ```85.142.100.0/24```
