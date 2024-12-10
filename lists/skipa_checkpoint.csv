@@ -6,6 +6,7 @@ fgup.grchc.185.224.228.x,185.224.228.0-185.224.228.255,IP Range,high,high,AB,FGU
 fgup.grchc.185.224.230.x,185.224.230.0-185.224.230.255,IP Range,high,high,AB,FGUP GRCHC
 fgup.grchc.212.192.158.x,212.192.158.0-212.192.158.255,IP Range,high,high,AB,FGUP GRCHC
 skipa.kurchatov.85.142.100.x,85.142.100.0-85.142.100.255,IP Range,high,high,AB,Skipa
+skipa.edgecenter.92.38.153.x,92.38.153.0-92.38.153.255,IP Range,high,high,AB,Skipa
 188.68.217.207,188.68.217.207,IP,high,high,AB,Skipa or similar 
 212.41.12.45,212.41.12.45,IP,high,high,AB,Skipa or similar 
 212.41.12.46,212.41.12.46,IP,high,high,AB,Skipa or similar 
